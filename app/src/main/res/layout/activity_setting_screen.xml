@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.SettingScreen">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/titleImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/storageTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Data Base Media - Firebase"
+        app:layout_constraintTop_toBottomOf="@+id/titleImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/storageSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="admobi/test"
+        app:layout_constraintStart_toStartOf="@+id/storageTitle"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_media_folder"
+        android:drawableTint="@color/white"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storageTitle"/>
+    <Button
+        android:id="@+id/storageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/storageSubTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10dp"
+        android:onClick="changeStorageFolder"
+        app:backgroundTint="@color/gray"
+        android:text="Change"/>
+
+    <!--Default Setting-->
+
+    <TextView
+        android:id="@+id/defaultSetting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Default Settings"
+        android:layout_marginTop="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/storageBtn"
+        app:layout_constraintStart_toStartOf="@+id/storageTitle"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/displayTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Display Time: 10 sec."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/defaultSetting"
+        app:layout_constraintTop_toBottomOf="@id/defaultSetting"
+        android:layout_marginTop="5dp"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/ic_clock"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Device Name : 484d3s8355df555sdfs"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/defaultSetting"
+        app:layout_constraintTop_toBottomOf="@id/displayTime"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_info"
+        android:layout_marginLeft="10dp"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:id="@+id/touchWaitingTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Touch Waiting Time: 10 sec."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/defaultSetting"
+        app:layout_constraintTop_toBottomOf="@id/deviceName"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_info"
+        android:layout_marginLeft="10dp"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        />
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Change the Password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/defaultSetting"
+        app:layout_constraintTop_toBottomOf="@id/touchWaitingTime"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_pass"
+        android:layout_marginLeft="10dp"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        />
+    <Button
+        android:id="@+id/defaultSettingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        app:layout_constraintTop_toBottomOf="@+id/changePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@color/gray"
+        android:onClick="changeDefaultSetting"
+        />
+
+    <!--bottom buttons-->
+    <Button
+        android:id="@+id/closeAdmobiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/storageTitle"
+        app:backgroundTint="@color/gray"
+        android:layout_marginBottom="20dp"
+        android:onClick="closeAdmobi"
+        android:text="Close AdMobi"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Admin Panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/gray"
+        android:layout_marginRight="20dp"
+        android:onClick="openDashboard"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

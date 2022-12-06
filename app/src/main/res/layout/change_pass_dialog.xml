@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/layout_bg">
+    <TextView
+        android:id="@+id/titlecdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER PASSWORD"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlecdd"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:inputType="numberPassword"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass1"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:inputType="numberPassword"
+        android:layout_marginHorizontal="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/changeDisplayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="@color/gray"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/returnDisplayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="@color/gray"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pass1"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

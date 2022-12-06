@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/layout_bg">
+    <TextView
+        android:id="@+id/titlecdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Time : "
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlecdd"
+        android:layout_marginTop="10dp"
+        android:theme="@style/AppTheme.Picker"
+        />
+
+
+    <Button
+        android:id="@+id/changeDisplayBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/gray"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/numberPicker"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+</RelativeLayout>

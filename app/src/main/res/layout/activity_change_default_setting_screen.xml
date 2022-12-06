@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.ChangeDefaultSettingScreen">
+
+    <TextView
+        android:id="@+id/dffTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Folders"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dffTextView"/>
+    <TextView
+        android:id="@+id/displayTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Time: 10 sec."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/defaultSetting"
+        android:layout_below="@+id/dffTextView"
+        android:layout_marginTop="25dp"
+        android:drawableTint="@color/white"
+        android:drawableLeft="@drawable/ic_clock"
+        android:layout_marginLeft="30dp"
+        android:drawablePadding="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/durChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/gray"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/displayTime"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:onClick="changeDisplayTime"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@id/durChange"/>
+
+    <TextView
+        android:id="@+id/touchWaitingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch Waiting Time: 10 sec."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_clock"
+        android:layout_marginLeft="30dp"
+        android:drawableTint="@color/white"
+        android:layout_below="@+id/durChange"
+        android:drawablePadding="10dp"
+        />
+
+    <Button
+        android:id="@+id/touchWaitingTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/gray"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/touchWaitingTime"
+        android:layout_alignParentRight="true"
+        android:onClick="touchWaitingTimeChange"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@id/touchWaitingTimeBtn"/>
+
+    
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Device Name : 484d3s8355df555sdfs"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_info"
+        android:layout_marginLeft="30dp"
+        android:drawableTint="@color/white"
+        android:layout_below="@+id/touchWaitingTimeBtn"
+        android:layout_marginBottom="5dp"
+        android:drawablePadding="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/deviceName"/>
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change the Password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/ic_pass"
+        android:layout_marginLeft="30dp"
+        android:drawableTint="@color/white"
+        android:layout_below="@+id/deviceName"
+        android:drawablePadding="10dp"
+        />
+
+    <Button
+        android:id="@+id/passChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@color/gray"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/changePassword"
+        android:layout_alignParentRight="true"
+        android:onClick="changePassword"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_below="@id/passChange"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="@color/gray"
+            android:layout_marginRight="20dp"
+            android:onClick="closeDefault"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="@color/gray"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:onClick="saveDefault"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

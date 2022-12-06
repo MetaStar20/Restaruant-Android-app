@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "432249068123",
+    "firebase_url": "https://admobi-ae191-default-rtdb.firebaseio.com",
+    "project_id": "admobi-ae191",
+    "storage_bucket": "admobi-ae191.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432249068123:android:0958c204deb4fc5bb13d7e",
+        "android_client_info": {
+          "package_name": "com.babar.restaurantkiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432249068123-i4j305f8bltup30bd35o9g5djbr79uma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGA9FjQeljMxg2eVmXiirmUaQsgM9-kIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432249068123-i4j305f8bltup30bd35o9g5djbr79uma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

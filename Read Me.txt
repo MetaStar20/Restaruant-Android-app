@@ -1,0 +1,5 @@
+Uploading files app using firebase...
+
+
+    public static final String DEFAULT_STORAGE_FOLDER = "test";
+    public static final String DEFAULT_PASSWORD = "01101216";
